@@ -117,7 +117,8 @@
 		printf(" Escolha a opção desejada do menu:\n\n"); //menu 
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d" , &opcao); //armazenar o valor que o usuario digitar na variavel
@@ -137,6 +138,11 @@
 			case 3: //caso a opção for 3 faça:	
 			deletar(); //chamar deletar
 			break; //finalizar ou fechar ao fim da escolha
+			
+			case 4: //caso a opção for 4 faça:
+			printf("Obrigado por utilizar o sistema!\n"); //mensagem ao usuário
+			return 0; //fechar o sistema
+			break; //fechar
 			
 			default: //caso for diferente do padrão/não mapeamos
 			printf("Esta opção nao está disponivel!\n"); //mensagem ao usuário
